@@ -37,7 +37,10 @@ const projectRoutes = require("./routes/project");
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, "public")));
-app.use(express.static(path.join(__dirname, ".netlify/functions/app/public")));
+app.use(
+  "/.netlify/functions/app/images",
+  express.static(path.join(__dirname, "images"))
+);
 
 app.use(projectRoutes);
 app.use("/.netlify/functions/app", projectRoutes);
