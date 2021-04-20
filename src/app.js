@@ -20,7 +20,9 @@ app.set("view engine", "ejs");
 console.log(path.join(__dirname, "public"));
 console.log(path.join(__dirname, "public", "images"));
 
-app.use(express.static(path.join(__dirname, "public")));
+app.use(
+  express.static(path.join(__dirname, ".netlify/functions/app/images/public"))
+);
 // app.use(
 //   express.static(
 //     "/images",
