@@ -1,13 +1,94 @@
-{
-  "firstName": "Rack",
-  "lastName": "jackson",
-  "gender": "man",
-  "age": 24,
-  "address": {
-    "streetAddress": "126 Udhna",
-    "city": "san jone",
-    "state": "CA",
-    "postalCode": "394221"
+[
+  {
+    "id": 1,
+    "title": "NintendoShop",
+    "description": "This app was made using React with redux and thunk on the front end. On back end it is using SpringBoot/NodeJS. In this app a user can make a account",
+    "summary": "Presents an online shop for buying Nintendo related products.",
+    "technologies": [
+      {
+        "id": 1,
+        "name": "Javascript"
+      },
+      {
+        "id": 2,
+        "name": "Typescript"
+      },
+      {
+        "id": 3,
+        "name": "React"
+      },
+      {
+        "id": 7,
+        "name": "SpringBoot"
+      }
+    ],
+    "images": [
+      {
+        "name": "images/NintendoShop.png"
+      }
+    ]
   },
-  "phoneNumbers": [{ "type": "home", "number": "7383627627" }]
-}
+  {
+    "id": 2,
+    "title": "NewsDaily",
+    "description": "",
+    "summary": "Presents an site for showing the latest news.",
+    "technologies": [
+      {
+        "id": 1,
+        "name": "Javascript"
+      },
+      {
+        "id": 2,
+        "name": "Typescript"
+      },
+      {
+        "id": 3,
+        "name": "React"
+      }
+    ],
+    "images": [
+      {
+        "name": "images/NewsDaily.png"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Checkers",
+    "description": "",
+    "summary": "Presents a game of checkers.",
+    "technologies": [
+      {
+        "id": 1,
+        "name": "Javascript"
+      },
+      {
+        "id": 2,
+        "name": "Typescript"
+      }
+    ],
+    "images": [
+      {
+        "name": "images/Checkers.png"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Green Earth",
+    "description": "",
+    "summary": "Present a brochure site using the latest css layouts grid and flexbox.",
+    "technologies": [
+      {
+        "id": 1,
+        "name": "Javascript"
+      }
+    ],
+    "images": [
+      {
+        "name": "images/GreenEarth.jpg"
+      }
+    ]
+  }
+]
