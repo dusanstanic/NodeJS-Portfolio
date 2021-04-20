@@ -17,11 +17,16 @@ app.use((req, res, next) => {
 
 app.set("view engine", "ejs");
 
+console.log(path.join(__dirname, "public"));
+console.log(path.join(__dirname, "public", "images"));
+
 app.use(express.static(path.join(__dirname, "public")));
 app.use(
   express.static(
     "/images",
-    express.static(path.join(__dirname, "public", "images"))
+    express.static(
+      path.join(__dirname, "/.netlify/functions/app", "public", "images")
+    )
   )
 );
 
@@ -34,7 +39,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, "public")));
 
 app.use(projectRoutes);
-app.use("/.netlify/functions/api", projectRoutes);
+app.use("/.netlify/functions/app", projectRoutes);
 app.use(errorController.get404);
 
 app.listen(3000, function () {

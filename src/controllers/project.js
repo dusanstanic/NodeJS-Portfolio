@@ -4,3 +4,4 @@ exports.fetchAll = async (req, res, next) => {
   const projects = await projectService.fetchAll();
   res.json(projects);
 };
+    // "start": "nodemon src/app.js",
