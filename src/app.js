@@ -21,14 +21,14 @@ console.log(path.join(__dirname, "public"));
 console.log(path.join(__dirname, "public", "images"));
 
 app.use(express.static(path.join(__dirname, "public")));
-app.use(
-  express.static(
-    "/images",
-    express.static(
-      path.join(__dirname, "/.netlify/functions/app", "public", "images")
-    )
-  )
-);
+// app.use(
+//   express.static(
+//     "/images",
+//     express.static(
+//       path.join(__dirname, "/.netlify/functions/app", "public", "images")
+//     )
+//   )
+// );
 
 const rootDir = require("./util/path");
 
@@ -36,11 +36,6 @@ const errorController = require("./controllers/error");
 const projectRoutes = require("./routes/project");
 
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(express.static(path.join(__dirname, "public")));
-app.use(
-  "/.netlify/functions/app/images",
-  express.static(path.join(__dirname, "images"))
-);
 
 app.use(projectRoutes);
 app.use("/.netlify/functions/app", projectRoutes);
