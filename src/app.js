@@ -30,7 +30,7 @@ const projectRoutes = require("./routes/project");
 
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.use("/.netlify/functions/api", projectRoutes);
+app.use("/.netlify/functions/app", projectRoutes);
 app.use(projectRoutes);
 app.use(errorController.get404);
 
