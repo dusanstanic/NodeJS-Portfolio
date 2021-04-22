@@ -30,9 +30,12 @@ const projectRoutes = require("./routes/project");
 
 app.use(bodyParser.urlencoded({ extended: false }));
 
+app.use("/.netlify/functions/api", projectRoutes);
 app.use(projectRoutes);
 app.use(errorController.get404);
 
 app.listen(3000, function () {
   console.log("info", "Server is running at port : " + 3000);
 });
+
+module.exports.handler = serverless(app);
