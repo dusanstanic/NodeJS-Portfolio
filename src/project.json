@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "NintendoShop",
-    "description": "This app was made using React with redux and thunk on the front end. On back end it is using SpringBoot/NodeJS. In this app a user can make a account",
+    "description": "This app was made using React with redux and thunk on the front end. On back end it is using SpringBoot/NodeJS.",
     "summary": "Presents an online shop for buying Nintendo related products.",
     "technologies": [
       {
@@ -31,7 +31,7 @@
   {
     "id": 2,
     "title": "NewsDaily",
-    "description": "",
+    "description": "This app was made using React with redux and thunk on the front end. The user can view and read news in different countries",
     "summary": "Presents an site for showing the latest news.",
     "technologies": [
       {
@@ -77,7 +77,7 @@
   {
     "id": 4,
     "title": "Green Earth",
-    "description": "",
+    "description": "This site was made mainly for studying and learning the latest css layouts.",
     "summary": "Present a brochure site using the latest css layouts grid and flexbox.",
     "technologies": [
       {
